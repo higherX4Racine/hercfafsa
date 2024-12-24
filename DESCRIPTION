@@ -14,5 +14,7 @@ Encoding: UTF-8
 LazyData: true
 Imports: 
     smeltr (>= 0.0.0.9000)
-Remotes:  
+Remotes: 
     https://github.com/higherX4Racine/smeltr
+URL: https://github.com/higherX4Racine/hercfafsa
+BugReports: https://github.com/higherX4Racine/hercfafsa/issues
