@@ -12,10 +12,12 @@ aims to solve that.
 
 ## Installation
 
-You can install the development version of hercfafsa like so:
+You can install the development version of hercfafsa from
+[GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("pak")
+pak::pak("higherX4Racine/hercfafsa")
 ```
 
 ## Example

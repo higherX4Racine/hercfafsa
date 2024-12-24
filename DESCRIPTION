@@ -13,8 +13,17 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    smeltr (>= 0.0.0.9000)
+    dplyr,
+    lubridate,
+    smeltr (>= 0.0.0.9000),
+    tidyr,
+    tidyselect
 Remotes: 
     https://github.com/higherX4Racine/smeltr
 URL: https://github.com/higherX4Racine/hercfafsa
 BugReports: https://github.com/higherX4Racine/hercfafsa/issues
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0),
+    tibble
+Config/testthat/edition: 3
