@@ -25,6 +25,7 @@ parse_status_and_date <- function(.x, .chimera_column) {
                          Year = "\\d+")
         ) |>
         dplyr::mutate(
+            Status = stringr::str_squish(.data$Status),
             Date = lubridate::ym(paste(.data$Year, .data$Month)),
             Date = lubridate::make_date(lubridate::year(.data$Date),
                                         lubridate::month(.data$Date),
