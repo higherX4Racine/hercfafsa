@@ -1,0 +1,18 @@
+Package: hercfafsa
+Type: Package
+Title: Wrangle Federal FAFSA Reports into Tidy Data
+Version: 0.1.0
+Authors@R: c(
+    person("Ben", "Taft", , "ben.taft@career2cradle.org", role = c("aut", "cre")),
+    person("Higher Expectations for Racine County", role = "cph")
+  )
+Description: There are several different kinds of reports available at
+    studentaid.gov. None of them are in tidy format. This package aims to
+    solve that.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    smeltr (>= 0.0.0.9000)
+Remotes:  
+    https://github.com/higherX4Racine/smeltr

@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# hercfafsa
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+There are several different kinds of reports available at
+https://studentaid.gov.
+None of them are in tidy format.
+This package aims to solve that.
+
+## Installation
+
+You can install the development version of hercfafsa like so:
+
+``` r
+# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```
+
+## Example
+
+TBD
