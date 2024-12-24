@@ -12,7 +12,7 @@ parse_status_and_date(.x, .chimera_column)
 \item{.chimera_column}{`<chr>` the name of the chimeric column}
 }
 \value{
-a tibble like `.x`, without `.chimera_column`,with two extra columns
+`<obj>` a tibble like `.x`, without `.chimera_column`,with two extra columns
 \describe{
   \item{Status}{`<chr>` Either "Submitted" or "Complete"}
   \item{Date}{`<date>` When the counts end}

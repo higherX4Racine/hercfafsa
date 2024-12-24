@@ -4,17 +4,19 @@
 \alias{read_raw_school_headers}
 \title{Look at headers about school-level counts of student FAFSA efforts}
 \usage{
-read_raw_school_headers(.fn)
+read_raw_school_headers(.fn, .sheet)
 }
 \arguments{
-\item{.fn}{`<chr>` the full path to the spreadsheet}
+\item{.fn}{`<chr>` the full path to the report spreadsheet}
+
+\item{.sheet}{`<chr>` the sheet in that file with school-level data}
 }
 \value{
-a tibble with five columns
+`<obj>` a tibble with five columns.
 \describe{
   \item{Column}{`<int>` The index of the column of the header cell}
   \item{Row1}{`<chr>` Mostly empty with a verbose first cell}
-  \item{Row2}{`<chr>` Sparse but reports which Cycle each column belongs to}
+  \item{Row2}{`<chr>` Sparse, but reports which Cycle each column belongs to}
   \item{Row3}{`<chr>` Redundant with Row4, basically just date}
   \item{Row4}{`<chr>` Column headings, the later ones are wide, not tidy}
 }

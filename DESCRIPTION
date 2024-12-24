@@ -15,7 +15,9 @@ LazyData: true
 Imports: 
     dplyr,
     lubridate,
+    readxl,
     smeltr (>= 0.0.0.9000),
+    stringr,
     tidyr,
     tidyselect
 Remotes: 
@@ -24,6 +26,7 @@ URL: https://github.com/higherX4Racine/hercfafsa
 BugReports: https://github.com/higherX4Racine/hercfafsa/issues
 RoxygenNote: 7.3.2
 Suggests: 
+    purrr,
     testthat (>= 3.0.0),
     tibble
 Config/testthat/edition: 3

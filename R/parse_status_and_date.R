@@ -5,7 +5,7 @@
 #' @param .x `<obj>` the data frame with a chimeric column
 #' @param .chimera_column `<chr>` the name of the chimeric column
 #'
-#' @returns a tibble like `.x`, without `.chimera_column`,with two extra columns
+#' @returns `<obj>` a tibble like `.x`, without `.chimera_column`,with two extra columns
 #' \describe{
 #'   \item{Status}{`<chr>` Either "Submitted" or "Complete"}
 #'   \item{Date}{`<date>` When the counts end}
@@ -15,7 +15,8 @@ parse_status_and_date <- function(.x, .chimera_column) {
         tidyr::separate_wider_delim(
             cols = tidyselect::all_of(.chimera_column),
             delim = "\n",
-            names = c(NA, "Status", "Date Text")
+            names = c(NA, "Status", "Date Text"),
+            cols_remove = FALSE
         ) |>
         tidyr::separate_wider_regex(
             cols = "Date Text",
